@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap');
+.home{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+.home::before{
+    background: 
+    linear-gradient(
+        180deg, 
+        rgba(0, 0, 0, 0.8) 78.12%,
+        rgba(78, 78, 78, 0.8) 100%
+    );
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}

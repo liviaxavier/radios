@@ -1,0 +1,61 @@
+.miniature{
+    height: 100px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: .3s;
+    cursor: pointer;
+    box-shadow: none;
+}
+.miniature_active{
+    filter: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(255, 255, 255, 0.2);
+}
+
+.miniature:hover{
+    filter: brightness(0.8);
+}
+.miniature__name{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    z-index: 2;
+}
+.miniature::before{
+    filter: brightness(0.2);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 120px;
+    border-radius: 8px;
+}
+.miniature_active::before{
+    background: transparent;
+}
+
+.miniatures{
+    height: 100px;
+    width: 90%;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 5%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 12;
+}
+
+.slider{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
